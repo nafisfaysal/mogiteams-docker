@@ -14,5 +14,5 @@ echo "Updating CA certificates"
 update-ca-certificates --fresh >/dev/null
 
 echo "Starting platform"
-cd mattermost
+cd mogiteams
 exec ./bin/mattermost --config=config/config_docker.json

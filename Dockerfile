@@ -21,18 +21,18 @@ WORKDIR /mm
 # Copy over files
 ADD https://github.com/nafisfaysal/mogiteams/releases/download/v1.0/mogiteams-v1.tar.gz .
 RUN tar -zxvf ./mogiteams-v1.tar.gz
-ADD config_docker.json ./mattermost/config/config_docker.json
+ADD config_docker.json ./mogiteams/config/config_docker.json
 ADD docker-entry.sh .
 
 RUN chmod +x ./docker-entry.sh
 ENTRYPOINT ./docker-entry.sh
 
 # Mattermost environment variables
-ENV PATH="/mm/mattermost/bin:${PATH}"
+ENV PATH="/mm/mogiteams/bin:${PATH}"
 
 # Create default storage directory
-RUN mkdir ./mattermost-data
-VOLUME /mm/mattermost-data
+RUN mkdir ./mogiteams-data
+VOLUME /mm/mogiteams-data
 
 # Ports
 EXPOSE 8065

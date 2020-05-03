@@ -76,7 +76,7 @@
         "EnableEmailInvitations": false
     },
     "TeamSettings": {
-        "SiteName": "Mattermost",
+        "SiteName": "MogiTeams",
         "MaxUsersPerTeam": 50,
         "EnableTeamCreation": true,
         "EnableUserCreation": true,
@@ -157,7 +157,7 @@
         "EnableMobileDownload": true,
         "MaxFileSize": 52428800,
         "DriverName": "local",
-        "Directory": "/mm/mattermost-data",
+        "Directory": "/mm/mogiteams-data",
         "EnablePublicLink": false,
         "PublicLinkSalt": "",
         "InitialFont": "nunito-bold.ttf",
